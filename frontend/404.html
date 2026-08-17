@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+
+    <title>
+        Page Not Found | Law Farm
+    </title>
+
+
+    <meta
+        name="description"
+        content="The page you are looking for could not be found. Return to Law Farm's website."
+    >
+
+
+    <meta
+        name="robots"
+        content="noindex, follow"
+    >
+
+
+    <!-- FAVICON -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/icons/favicon.png"
+    >
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- MAIN STYLESHEET -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <style>
+
+        /* =================================================
+           404 PAGE
+        ================================================= */
+
+        .error-page {
+
+            min-height:
+                100vh;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            padding:
+                40px 24px;
+
+            text-align:
+                center;
+
+        }
+
+
+        .error-content {
+
+            width:
+                100%;
+
+            max-width:
+                720px;
+
+        }
+
+
+        .error-number {
+
+            margin-bottom:
+                15px;
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size:
+                clamp(
+                    110px,
+                    20vw,
+                    210px
+                );
+
+            line-height:
+                .8;
+
+            letter-spacing:
+                -5px;
+
+            color:
+                var(--gold);
+
+            opacity:
+                .9;
+
+        }
+
+
+        .error-label {
+
+            margin-bottom:
+                18px;
+
+            color:
+                #77787C;
+
+            font-size:
+                9px;
+
+            font-weight:
+                500;
+
+            letter-spacing:
+                3px;
+
+            text-transform:
+                uppercase;
+
+        }
+
+
+        .error-content h1 {
+
+            margin:
+                0 auto 20px;
+
+            max-width:
+                650px;
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size:
+                clamp(
+                    32px,
+                    5vw,
+                    54px
+                );
+
+            font-weight:
+                400;
+
+            line-height:
+                1.1;
+
+            color:
+                #E7E7E8;
+
+        }
+
+
+        .error-content p {
+
+            max-width:
+                560px;
+
+            margin:
+                0 auto 35px;
+
+            color:
+                #85868A;
+
+            font-size:
+                12px;
+
+            line-height:
+                1.9;
+
+        }
+
+
+        .error-actions {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            gap:
+                12px;
+
+            flex-wrap:
+                wrap;
+
+        }
+
+
+        .error-actions a {
+
+            text-decoration:
+                none;
+
+        }
+
+
+        .error-home {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                10px;
+
+            min-width:
+                170px;
+
+            padding:
+                14px 22px;
+
+            background:
+                var(--gold);
+
+            color:
+                #0B0C0D;
+
+            font-size:
+                9px;
+
+            font-weight:
+                600;
+
+            letter-spacing:
+                1px;
+
+            text-transform:
+                uppercase;
+
+            transition:
+                transform .25s ease,
+                opacity .25s ease;
+
+        }
+
+
+        .error-home:hover {
+
+            transform:
+                translateY(-2px);
+
+            opacity:
+                .9;
+
+        }
+
+
+        .error-contact {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            min-width:
+                170px;
+
+            padding:
+                13px 22px;
+
+            border:
+                1px solid var(--border);
+
+            color:
+                #BFC0C3;
+
+            font-size:
+                9px;
+
+            font-weight:
+                500;
+
+            letter-spacing:
+                1px;
+
+            text-transform:
+                uppercase;
+
+            transition:
+                border-color .25s ease,
+                color .25s ease;
+
+        }
+
+
+        .error-contact:hover {
+
+            border-color:
+                var(--gold);
+
+            color:
+                var(--gold);
+
+        }
+
+
+        /* =================================================
+           MOBILE
+        ================================================= */
+
+        @media (max-width: 600px) {
+
+            .error-page {
+
+                padding:
+                    30px 20px;
+
+            }
+
+
+            .error-number {
+
+                letter-spacing:
+                    -3px;
+
+            }
+
+
+            .error-content p {
+
+                font-size:
+                    11px;
+
+            }
+
+
+            .error-actions {
+
+                flex-direction:
+                    column;
+
+                width:
+                    100%;
+
+            }
+
+
+            .error-home,
+            .error-contact {
+
+                width:
+                    100%;
+
+                max-width:
+                    300px;
+
+            }
+
+        }
+
+    </style>
+
+
+</head>
+
+
+
+<body>
+
+
+    <main class="error-page">
+
+
+        <div class="error-content">
+
+
+            <div
+                class="error-number"
+                aria-hidden="true">
+
+                404
+
+            </div>
+
+
+            <div class="error-label">
+
+                Page Not Found
+
+            </div>
+
+
+            <h1>
+
+                The page you're looking for
+                has moved or no longer exists.
+
+            </h1>
+
+
+            <p>
+
+                The address may have been entered incorrectly,
+                or the page may have been removed. You can
+                return to the Law Farm homepage or contact
+                our office if you need assistance.
+
+            </p>
+
+
+            <div class="error-actions">
+
+
+                <a
+                    href="index.html"
+                    class="error-home">
+
+                    Return Home
+
+                    <span aria-hidden="true">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="contact.html"
+                    class="error-contact">
+
+                    Contact Us
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+
+</html>

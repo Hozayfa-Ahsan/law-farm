@@ -1,0 +1,437 @@
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+
+    .header-cta {
+
+        display: none;
+    }
+
+
+    nav ul {
+
+        gap: 20px;
+    }
+
+
+    .hero-container {
+
+        gap: 35px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 60px;
+    }
+
+
+    .practice-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .about-grid,
+    .why-grid {
+
+        gap: 50px;
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .header-container {
+
+        height: 75px;
+    }
+
+
+    .menu-toggle {
+
+        display: flex;
+
+        position: relative;
+
+        z-index: 1100;
+    }
+
+
+    nav {
+
+        position: fixed;
+
+        top: 0;
+
+        right: -100%;
+
+        width: min(85%, 360px);
+
+        height: 100vh;
+
+        padding:
+            110px 35px 40px;
+
+        background:
+            #111214;
+
+        border-left:
+            1px solid var(--border);
+
+        transition:
+            right .4s ease;
+    }
+
+
+    nav.active {
+
+        right: 0;
+    }
+
+
+    nav ul {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    nav a {
+
+        font-size: 20px;
+    }
+
+
+    .hero {
+
+        padding:
+            130px 0 80px;
+    }
+
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .hero-content {
+
+        max-width: 700px;
+    }
+
+
+    .hero-visual {
+
+        min-height: 450px;
+
+        margin-top: 30px;
+    }
+
+
+    .about-grid,
+    .why-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+
+    .attorney-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .stat-box {
+
+        border-right: none;
+
+        border-bottom:
+            1px solid var(--border);
+    }
+
+
+    .stat-box:nth-child(odd) {
+
+        border-right:
+            1px solid var(--border);
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        width: 88%;
+    }
+
+
+    .logo {
+
+        font-size: 31px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 48px;
+
+        line-height: 1.05;
+    }
+
+
+    .hero-description {
+
+        font-size: 14px;
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+    }
+
+
+    .hero-buttons .btn {
+
+        width: 100%;
+    }
+
+
+    .hero-visual {
+
+        min-height: 400px;
+    }
+
+
+    .legal-columns {
+
+        gap: 12px;
+    }
+
+
+    .column {
+
+        width: 45px;
+
+        height: 280px;
+    }
+
+
+    .column::before {
+
+        width: 65px;
+
+        left: -10px;
+    }
+
+
+    .column::after {
+
+        width: 80px;
+
+        left: -17px;
+    }
+
+
+    .hero-emblem {
+
+        width: 180px;
+
+        height: 180px;
+    }
+
+
+    .emblem-ring {
+
+        width: 60px;
+
+        height: 60px;
+    }
+
+
+    .hero-stat {
+
+        min-width: 120px;
+
+        padding: 13px;
+    }
+
+
+    .hero-stat strong {
+
+        font-size: 25px;
+    }
+
+
+    .hero-stat span {
+
+        font-size: 8px;
+    }
+
+
+    .stat-one {
+
+        left: 0;
+
+        bottom: 15px;
+    }
+
+
+    .stat-two {
+
+        right: 0;
+
+        top: 25px;
+    }
+
+
+    .stat-three {
+
+        right: 0;
+
+        bottom: -10px;
+    }
+
+
+    .section {
+
+        padding:
+            85px 0;
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 45px;
+    }
+
+
+    .about-grid {
+
+        gap: 40px;
+    }
+
+
+    .large-text {
+
+        font-size: 26px;
+    }
+
+
+    .practice-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .practice-card {
+
+        min-height: 290px;
+    }
+
+
+    .attorney-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .attorney-photo {
+
+        height: 430px;
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .stat-box,
+    .stat-box:nth-child(odd) {
+
+        border-right: none;
+    }
+
+
+    .result-item {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .result-outcome {
+
+        text-align: left;
+    }
+
+
+    .testimonial-card {
+
+        padding:
+            45px 25px;
+    }
+
+
+    .testimonial-card blockquote {
+
+        font-size: 24px;
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+    }
+
+}
